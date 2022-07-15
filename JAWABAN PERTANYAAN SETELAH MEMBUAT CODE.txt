@@ -1,0 +1,43 @@
+Nama : Moses Marzuki Samosir
+NRP : 2072042
+
+- how to search for data with nrp
+pertama - tama, pada field text yang telah kita buat , kita berikan fxid sebagai atribut
+kemudian pada sebuah fungsi onDelete, kita buat sebuah loop untuk mencari data yang ingin dihapus.
+pada loop ini kita mencari data yang sama antara data yang ingin kita cari dengan data yang
+ada pada arraylist.
+
+- how to delete
+untuk menghapus dari tableview, kita menggunakan method .remove() dengan memasukkan index data
+yang telah ditemukan.  
+
+- how to prevent error when no data deleted
+ bisa melakukan exaption.
+
+- how to show error when no data deleted
+ketika data yang dicari tidak ada, maka pada kondisi itu kita bisa menambahkan else
+dan melakukan tulis pesan seperti pop out untuk memberitahu user
+
+- how to add confirm box to make sure deletion
+dengan membuat suatu pane, lalu pada pane tersebut kita buat sebuah pesan dengan 2 button yes/no
+pada secene builder dan memberikan fxid, lalu pada fungsi onDelete, ketika tidak ada data yang sama,
+tampilkan pane yang tadi yang sudah berisi pesan juga button
+
+- how to know which data selected from table select
+dengan mengambil dari sebuah objek yang telah dibuat.
+
+- how to show selected data from table on the txtNrpDelete
+dengan menyimpan input dari txtNrpDelete dan mencari data yang sama pada arraylist
+menggunakan loop dan menyimpan indexnya.
+
+- how to delete data selected from table select
+dengan menggunakan perintah table.view.getItems.remove(indeks)
+
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be added
+membuat model baru yaitu score. 
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be updated
+update file model untuk menambahkan score dan mata kuliah
+update file .fxml untuk membuat tampilan score(menambah column tableview) 
+update file controller untuk menampilkan score
